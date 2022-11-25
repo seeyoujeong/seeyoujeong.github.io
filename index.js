@@ -1,3 +1,3 @@
-import App from './App.js';
+const root = document.getElementById('root');
 
-new App({ $target: document.getElementById('root') });
+root.innerHTML = 'see you jeong';
