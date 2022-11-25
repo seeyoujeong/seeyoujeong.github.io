@@ -2,68 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Page</title>
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <style>
-    .App {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 1px solid black;
-      padding: 10px;
-    }
-
-    .App header {
-      font-size: 2rem;
-    }
-
-    .Counter {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .Counter .buttons button {
-      width: 2rem;
-    }
-  </style>
+  <title>see you jeong</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="text/babel">
-    function Counter() {
-      const [num, setNum] = React.useState(0);
-      const onClickPlus = () => {
-        setNum(num + 1);
-      };
-      const onClickMinus = () => {
-        setNum(num - 1);
-      };
-
-      return (
-        <div className="Counter">
-          <p>{num}</p>
-          <div className="buttons">
-            <button onClick={onClickPlus}>+</button>
-            <button onClick={onClickMinus}>-</button>
-          </div>
-        </div>
-      );
-    }
-
-    function App() {
-      return (
-        <div className="App">
-          <header>Page</header>
-          <Counter />
-        </div>
-      );
-    }
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(<App />);
-  </script>
+  <div id="root">test</div>
 </body>
 </html>
