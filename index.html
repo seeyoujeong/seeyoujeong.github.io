@@ -3,9 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>seeyoujeong</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    header {
+      display: flex;
+      background: rgb(31, 31, 31);
+      color: white;
+      font-size: 32px;
+      height: 75px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    #form, #result {
+      border: 1px solid black;
+      margin: 10px;
+      padding: 10px
+    }
+
+    .label-input {
+      margin: 5px 0px 5px 0px;
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
+  <header>See You Jeong</header>
+  <article>
+    <div id="form">
+      <form>
+        <div class="label-input">
+          <label for="K">K</label>
+          <input type="text" id="K"/>
+        </div>
+        <div class="label-input">
+          <label for="ROE">ROE</label>
+          <input type="text" id="ROE"/>
+        </div>
+        <div class="label-input">
+          <label for="B">B</label>
+          <input type="text" id="B"/>
+        </div>
+        <div class="label-input">
+          <label for="commonShare">commonShare</label>
+          <input type="text" id="commonShare"/>
+        </div>
+        <div class="label-input">
+          <label for="preferredShare">preferredShare</label>
+          <input type="text" id="preferredShare"/>
+        </div>
+        <div class="label-input">
+          <label for="treasuryStock">treasuryStock</label>
+          <input type="text" id="treasuryStock"/>
+        </div>
+      </form>
+    </div>
+    <div id="result"></div>
+  </article>
   <script src="index.js"></script>
 </body>
 </html>
