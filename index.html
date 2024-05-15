@@ -1,205 +1,110 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>seeyoujeong</title>
-  <link rel="shortcut icon" type="image/png" href="/favicon.png">
-  <script src="https://kit.fontawesome.com/4dfb601b09.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      margin: 0px;
-      padding: 0px;
-      background: rgb(31, 31, 31);
-      color:rgb(31, 31, 31);
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>seeyoujeong</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/4dfb601b09.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        color: rgb(31, 31, 31);
+      }
 
-    header, footer {
-      display: flex;
-      align-items: center;
-      color: white;
-    }
+      header,
+      footer {
+        display: flex;
+        align-items: center;
+        background: rgb(31, 31, 31);
+        color: white;
+        height: 90px;
+      }
 
-    header {
-      justify-content: center;
-      font-size: 20px;
-      height: 75px;
-    }
+      header {
+        justify-content: center;
+        font-size: 20px;
+      }
 
-    article {
-      display: flex;
-      padding: 10px 25px;
-      flex-direction: column;
-      background-color: white;
-      text-align: center;
-    }
+      article {
+        height: calc(100vh - 180px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
 
-    article p {
-      line-height: 30px;
-    }
+      article ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+      }
 
-    hr {
-      width: 100%;
-    }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+      }
 
-    footer {
-      justify-content: space-between;
-      padding: 30px 25px;
-      font-size: 28px;
-      height: auto;
-    }
+      .footer_sns ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        font-size: 28px;
+      }
 
-    footer img {
-      height: 35px;
-      padding: 0px 30px;
-    }
+      .footer_sns li {
+        padding: 0px 10px;
+      }
 
-    .footer_sns ul {
-      display: flex;
-      list-style: none;
-      padding: 0px;
-    }
-
-    .footer_sns li {
-      padding: 0px 10px;
-    }
-
-    .footer_sns a {
-      color: white;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>See You Jeong</h1>
-  </header>
-  <article>
-    <div>
-      <h2>디지털 인터페이스</h2>
-      <p>
-        사람들은 터치스크린에 거의 도취되어 있다.
-        <br>
-        사람들은 마치 습관처럼, 고민 없이, 반사적으로 네모난 스크린에 갇혀버렸다.
-        <br>
-        사용자 경험을 디자인하는 데 있어, 너무나 만연하면서도 암묵적으로 스크린에 갇힌 접근 방식이 깔려 있는 것이다.
-        <br>
-        문제를 해결하기 위해 창의적이고 독창적이며 유용한 방법을 추구하기보다 스크린에서부터 시작하려고 한다.
-        <br>
-        인터페이스 중독은 사용자가 정말로 해야 하는 일들로부터 점점 멀어지게 만들고 있다.
-        <br>
-        역조명의 스크린 인터페이스를 보고 있노라면 우리의 정신은 본능적으로도, 화학적으로도 좀 더 또렷해진다.
-        <br>
-        스크린과 보내는 많은 시간은 대부분 불필요한 것이며, 목표를 달성하는 데 방해가 될 뿐이다.
-        <br>
-        인터페이스는 우리가 보고, 교감하고, 주변 사람들과 대화를 나누는 것까지 빼앗아 가고 있다.
-        <br>
-        무작정 화면부터 설계하는 대신, 평소에 늘 하는 행동을 먼저 생각해보는 것이다.
-        <br>
-        습관적으로 사각형을 그리는 일에 벗어나 제대로 된 솔루션을 찾으려면, 인터넷을 일시적으로 사용할 수 없던 과거로까지 거슬러 올라가야 한다.
-        <br>
-        스크린으로 무엇을 할 수 있을지를 고민할 게 아니라 가능한 한 최소한의 인터랙션으로 문제를 풀어내는 일에 집중할 수 있게 해야 한다.
-      </p>
-    </div>
-    <hr>
-    <div>
-      <h2>컴퓨터</h2>
-      <p>
-        아주 간단한 정보를 얻는 데도 복잡한 데이터베이스를 뒤지도록, 불필요한 강요를 받고 있다.
-        <br>
-        우리는 컴퓨터를 모시고 살고 있다.
-        <br>
-        두 살짜리 아이처럼 떼쓰고 성질내는 컴퓨터가 아니라, 사람을 위해 일하는 컴퓨터를 만들어보자.
-        <br>
-        컴퓨터가 결과값을 스스로 찾아내고 걸러낼 수 있도록 하자.
-      </p>
-    </div>
-    <hr>
-    <div>
-      <h2>디지털 잡일</h2>
-      <p>
-        구세대의 낡은 것들을 디지털화하는 과정에서 소프트웨어는 사용자에게 점점 더 많은 요구를 하게 되었다.
-        <br>
-        디지털 잡일을 처리할수록 더 많은 디지털 잡일이 생겨난다는 것이다.
-      </p>
-    </div>
-    <hr>
-    <div>
-      <h2>개인정보 보호</h2>
-      <p>
-        개인정보 취급방침을 전부 읽는 데 540억 시간이 걸린다.
-        <br>
-        약관 동의서를 읽는 일은 정신적 고문이며, 사람들은 절대로 약관을 읽지 않을 것이다.
-        <br>
-        약관 동의서에 사용자들은 1~1.5초 정도 머물러 있다.
-        <br>
-        진정한 성공을 위해서 윤리적 정책을 잘 갖추고 있어야 한다.
-        <br>
-        개인정보 보호의 이상적인 토대는 데이터를 투명하고 도덕진인 방법으로 수집함으로써 이루어진다.
-        <br>
-        데이터 수집에 대한 투명성을 확보하고 신뢰를 얻기에 삭제 기능은 더 없이 좋은 방법이다.
-        <br>
-        사용자들의 개인정보와 비밀은 철저하게 보호되어야 할 것이다.
-      </p>
-    </div>
-    <hr>
-    <div>
-      <h2>자동화</h2>
-      <p>
-        자동화 기능은 마법처럼 동작하며, 사용자의 '진정한 행복'을 목표로 한다.
-        <br>
-        자동화 기능을 제대로 만들기 위해서는 사용자의 의도를 검증할 수 있는 유효 데이터가 굉장히 많이 필요하다.
-        <br>
-        자연스러운 자동화 기능이 완벽하게 우리의 일상에 녹아들기까지는 수천 년에서 수십 년이 걸린다.
-        <br>
-        자동화 기능은 성공적인 기술 혁신의 기준점을 제시했다.
-        <br>
-        잘 만들어진 자동화 솔루션은 결국 자연스럽게 우리의 일상에 녹아들 것이다.
-      </p>
-    </div>
-    <hr>
-    <div>
-      <h2>예외 사항</h2>
-      <p>
-        인터페이스를 없애는 것만이 유일한 해결책이라 우기는 건 정말 멍청한 짓이다.
-        <br>
-        '인터페이스 없애기'는 기술적으로 더 나은 경험을 성취하려는 앞선 방향 중 하나다.
-        <br>
-        주요 사항들을 결정할 때는 인터페이스 같은 형식들이 필요한 경우도 있다.
-        <br>
-        효율성에 대한 판단은 사람들이 그 활동을 얼마나 좋아하고 즐기느냐에 있다.
-        <br>
-        어떤 규칙이든 예외 사항은 반드시 존재한다.
-        <br>
-        사용자를 중요한 문제에서 멀어지게 할 게 아니라 사용자의 일상에 더욱 깊이 녹아들어야 한다.
-      </p>
-    </div>
-  </article>
-  <footer>
-    <div>
-      <img src="/favicon.png" alt="favicon">
-    </div>
-    <div class="footer_sns">
-      <ul>
+      .footer_sns a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>생활 계획</h2>
+    </header>
+    <article>
+      <ol>
         <li>
-          <a href="https://github.com/seeyoujeong" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
+          아래의 내용을 매일 실천 못하더라도 스트레스를 받지말고 유연하게
+          생활하자
         </li>
-        <li>
-          <a href="https://www.instagram.com/seeyoujeong" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/seeyoujeong" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <img src="/favicon.png" alt="favicon">
-    </div>
-  </footer>
-</body>
+        <li>7 ~ 8시간 자기</li>
+        <li>자기전에 컴퓨터, 테블릿, 폰을 보지말기</li>
+        <li>자는 시간을 제외하고는 침대에 눕지말기</li>
+        <li>만보 걷기</li>
+        <li>30분이상 책 읽기</li>
+      </ol>
+    </article>
+    <footer>
+      <div class="footer_copyright">© 2024 seeyoujeong</div>
+      <div class="footer_sns">
+        <ul>
+          <li>
+            <a href="https://github.com/seeyoujeong" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/seeyoujeong" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
