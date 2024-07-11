@@ -1,63 +1,38 @@
-# GitHub Pages에 VitePress 사이트를 빌드하고 배포하기 위한 샘플 워크플로우
-#
-name: Deploy VitePress site to Pages
+name: Deploy to GitHub Pages
 
 on:
-  # `main` 브랜치를 대상으로 하는 푸시에 대해 실행합니다. 기본 브랜치로 `master`를
-  # 사용하는 경우, 이를 `master`로 변경하세요.
+  # 'main' 브랜치로 푸시할 때마다 워크플로를 트리거합니다.
+  # 다른 브랜치 이름을 사용하시나요? `main`을 브랜치 이름으로 바꾸세요.
   push:
     branches: [main]
-
-  # Actions 탭에서 이 워크플로우를 수동으로 실행할 수 있도록 허용합니다.
+  # GitHub의 Actions 탭에서 이 워크플로를 수동으로 실행할 수 있습니다.
   workflow_dispatch:
 
-# GitHub Pages에 배포를 허용하기 위해 GITHUB_TOKEN의 권한을 설정합니다.
+# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 동시에 하나의 배포만 허용하며, 진행 중인 실행과 최신 대기열 사이에 대기열에 있는 실행을 건너뛰기.
-# 그러나, 이러한 프로덕션 배포를 완료하도록 진행 중인 실행을 취소하지는 마세요.
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
-  # 빌드 작업
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout your repository using git
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # lastUpdated가 활성화되어 있지 않다면 필요 없습니다
-      # - uses: pnpm/action-setup@v3 # pnpm을 사용하는 경우 이것을 주석 해제하세요
-      # - uses: oven-sh/setup-bun@v1 # Bun을 사용하는 경우 이것을 주석 해제하세요
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm # 또는 pnpm / yarn
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Install dependencies
-        run: npm ci # 또는 pnpm install / yarn install / bun install
-      - name: Build with VitePress
-        run: npm run build # 또는 pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .vitepress/dist
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
+        # with:
+        # path: . # 저장소 내 Astro 프로젝트의 루트 위치입니다. (선택 사항)
+        # node-version: 20 # 사이트를 빌드하는 데 사용해야 하는 특정 버전의 Node입니다. 기본값은 20입니다. (선택 사항)
+        # package-manager: pnpm@latest # 종속성을 설치하고 사이트를 빌드하는 데 사용해야 하는 노드 패키지 관리자입니다. lockfile을 기반으로 자동으로 감지됩니다. (선택 사항)
 
-  # 배포 작업
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
