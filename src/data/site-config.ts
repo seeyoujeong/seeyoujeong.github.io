@@ -40,10 +40,10 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
   title: 'seeyoujeong',
   subtitle: '그냥 컴퓨터하는 사람',
-  description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+  description: '그냥 컴퓨터하는 사람의 블로그',
   image: {
-    src: '/dante-preview.jpg',
-    alt: 'Dante - Astro.js and Tailwind CSS theme'
+    src: '/about-cat.jpeg',
+    alt: 'cat'
   },
   headerNavLinks: [
     {
@@ -91,7 +91,7 @@ const siteConfig: SiteConfig = {
     title: 'Hi There & Welcome to My Corner of the Web!',
     text: '안녕하세요. 위의 사진은 공원에서 찍은 고양이에요. 뭔가 *바쁘다 바뻐! 현대 사회!* 같은 느낌을 주지 않나요?',
     image: {
-      src: '/hero.jpeg',
+      src: '/hero-cats.jpeg',
       alt: 'cats'
     },
     actions: [

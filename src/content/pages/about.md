@@ -8,7 +8,7 @@ seo:
     alt: cat
 ---
 
-![Alt text for image](/about.jpeg)
+![Alt text for image](/about-cat.jpeg)
 
 ### 잔디 심기
 
