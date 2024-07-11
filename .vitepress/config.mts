@@ -2,9 +2,10 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "seeyoujeong",
+  description: "seeyoujeong page",
   themeConfig: {
+    logo: "/logo.png",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
@@ -27,4 +28,5 @@ export default defineConfig({
   },
 
   cleanUrls: true,
+  srcDir: "./pages",
 });

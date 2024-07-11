@@ -23,3 +23,11 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+## 시작하기
+
+`npx`를 사용하여 바로 VitePress를 사용할 수 있습니다!
+
+```sh
+npm init
+npx vitepress init
+```
