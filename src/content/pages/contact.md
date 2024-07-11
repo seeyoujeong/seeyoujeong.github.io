@@ -1,14 +1,14 @@
 ---
-title: Get in touch
+title: Contact
 seo:
   title: Contact
-  description: Get in touch through email or social media! Let me know how I can help.
+  description: 연락 수단을 기록해놨습니다.
 ---
 
-Thank you for reaching out! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:
+연락이 필요하시면 연락주세요.
 
-_Email:_
-Feel free to drop me an email at [example@example.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
+_Email:_  
+[seeyoujeong.dev@gmail.com](mailto:seeyoujeong.dev@gmail.com) <- 자주 확인합니다.
 
-_Social Media:_
-Connect with me on social media as well. Find me on [Twitter](https://twitter.com) or [LinkedIn](https://www.linkedin.com/).
+_Social Media:_  
+[Instagram](https://www.instagram.com/seeyoujeong/) <- 잘보진 않지만 DM 주시면 확인합니다.

@@ -39,7 +39,7 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
   title: 'seeyoujeong',
-  subtitle: 'Minimal Astro.js theme',
+  subtitle: '그냥 컴퓨터하는 사람',
   description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
   image: {
     src: '/dante-preview.jpg',
@@ -50,10 +50,10 @@ const siteConfig: SiteConfig = {
       text: 'Home',
       href: '/'
     },
-    {
-      text: 'Projects',
-      href: '/projects'
-    },
+    // {
+    //   text: 'Projects',
+    //   href: '/projects'
+    // },
     {
       text: 'Blog',
       href: '/blog'
@@ -71,40 +71,32 @@ const siteConfig: SiteConfig = {
     {
       text: 'Contact',
       href: '/contact'
-    },
-    {
-      text: 'Terms',
-      href: '/terms'
-    },
-    {
-      text: 'Download theme',
-      href: 'https://github.com/JustGoodUI/dante-astro-theme'
     }
+    // {
+    //   text: 'Terms',
+    //   href: '/terms'
+    // }
   ],
   socialLinks: [
     {
-      text: 'Dribbble',
-      href: 'https://dribbble.com/'
+      text: 'GitHub',
+      href: 'https://github.com/seeyoujeong'
     },
     {
       text: 'Instagram',
-      href: 'https://instagram.com/'
-    },
-    {
-      text: 'X/Twitter',
-      href: 'https://twitter.com/'
+      href: 'https://www.instagram.com/seeyoujeong/'
     }
   ],
   hero: {
     title: 'Hi There & Welcome to My Corner of the Web!',
-    text: "I'm **Ethan Donovan**, a web 글을 써본다 at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+    text: '안녕하세요. 위의 사진은 공원에서 찍은 고양이에요. 뭔가 *바쁘다 바뻐! 현대 사회!* 같은 느낌을 주지 않나요?',
     image: {
       src: '/hero.jpeg',
-      alt: 'A person sitting at a desk in front of a computer'
+      alt: 'cats'
     },
     actions: [
       {
-        text: 'Get in Touch',
+        text: 'Contact',
         href: '/contact'
       }
     ]

@@ -2,42 +2,26 @@
 title: About
 seo:
   title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
+  description: 소개하는 글입니다.
   image:
     src: '/about.jpeg'
-    alt: A person sitting at a desk in front of a computer
+    alt: cat
 ---
 
 ![Alt text for image](/about.jpeg)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+### 잔디 심기
 
-## Ethan Donovan - Web Developer based in Estonia
+[깃허브](https://github.com/seeyoujeong)에 잔디 심는건 흠... 취미입니다.
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+### 타입 추론을 해주는 프로그래밍 언어가 좋아요.
 
-## Skills and Expertise
+**TypeScript**, Rust를 써보면 Java는 좀 번거롭네요. 그렇지만 쓰긴 쓰죠.
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+### 이것 저것 공부
 
-## Innovation and Problem-Solving
+데이터 분석, 컴퓨터 비전, 백엔드를 접해보고 **프론트엔드**가 마음에 들었어요.
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+### 1달에 1권 읽기
 
-## Global Perspective, Local Impact
-
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
-
-## Continuous Learning
-
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
-
-## Collaboration and Communication
-
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
-
-## Get in Touch
-
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
-
-_Let's build something amazing together!_
+2018년엔 34권, 2019년엔 65권, 2020년엔 14권, 2021년엔 12권, 2022년엔 16권, 2023년엔 15권을 읽었네요.

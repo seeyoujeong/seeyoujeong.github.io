@@ -1,7 +1,7 @@
 ---
-title: The Advantages & Disadvantages of Working from Home
-excerpt: In recent years, the way we work has undergone a significant transformation, largely due to advancements in technology and changing attitudes toward work-life balance. One of the most notable changes has been the rise of remote work, allowing employees to work from the comfort of their own homes.
-publishDate: 'Aug 5 2023'
+title: 일단 임시로 뭔가를 적어야 할거 같아서 적은 제목
+excerpt: 뭔가 임시로 적어야 할거 같아서 적은 설명
+publishDate: '01 01 2023'
 tags:
   - Guide
 seo:
