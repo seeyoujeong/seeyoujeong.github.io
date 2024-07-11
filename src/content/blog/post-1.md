@@ -3,7 +3,7 @@ title: 일단 임시로 뭔가를 적어야 할거 같아서 적은 제목
 excerpt: 뭔가 임시로 적어야 할거 같아서 적은 설명
 publishDate: '01 01 2023'
 tags:
-  - Guide
+  - 임시
 seo:
   image:
     src: '/post-1.jpg'
