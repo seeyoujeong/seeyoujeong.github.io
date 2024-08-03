@@ -3,8 +3,9 @@ import { getCollection } from 'astro:content';
 import siteConfig from '../../data/site-config';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BookPreview from '../../components/BookPreview.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
 
-const books = await getCollection('book');
+const books = (await getCollection('book')).sort(sortItemsByDateDesc);
 ---
 
 <BaseLayout description={siteConfig.description} showHeader={false}>
