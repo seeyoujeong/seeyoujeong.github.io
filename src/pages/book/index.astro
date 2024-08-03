@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import siteConfig from '../../data/site-config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookPreview from '../../components/BookPreview.astro';
+
+const books = await getCollection('book');
+---
+
+<BaseLayout description={siteConfig.description} showHeader={false}>
+  <h1 class="mb-12 text-2xl font-serif italic sm:mb-16 sm:text-4xl">Books</h1>
+  {
+    books?.length > 0 && (
+      <div class="mb-16 sm:mb-24">
+        {books.map((post) => (
+          <BookPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
+        ))}
+      </div>
+    )
+  }
+</BaseLayout>
