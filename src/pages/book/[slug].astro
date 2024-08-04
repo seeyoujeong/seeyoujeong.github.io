@@ -2,32 +2,27 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import PostPreview from '../../components/PostPreview.astro';
-import Subscribe from '../../components/Subscribe.astro';
-import { sortItemsByDateDesc } from '../../utils/data-utils';
-import { slugify } from '../../utils/common-utils';
 import BookPreview from '../../components/BookPreview.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('book');
-  const postCount = posts.length;
-  return posts.map((post, index) => ({
-    params: { slug: post.slug },
+  const books = await getCollection('book');
+  const postCount = books.length;
+  return books.map((book, index) => ({
+    params: { slug: book.slug },
     props: {
-      post,
-      prevPost: index + 1 !== postCount ? posts[index + 1] : null,
-      nextPost: index !== 0 ? posts[index - 1] : null
+      book,
+      prevPost: index + 1 !== postCount ? books[index + 1] : null,
+      nextPost: index !== 0 ? books[index - 1] : null
     }
   }));
 }
 
-type Props = { post: CollectionEntry<'book'>; prevPost: CollectionEntry<'book'>; nextPost: CollectionEntry<'book'> };
+type Props = { book: CollectionEntry<'book'>; prevPost: CollectionEntry<'book'>; nextPost: CollectionEntry<'book'> };
 
 const { href } = Astro.url;
-const { post, prevPost, nextPost } = Astro.props;
-const { title, publishDate, updatedDate, excerpt, tags = [], seo } = post.data;
-const { Content } = await post.render();
+const { book, prevPost, nextPost } = Astro.props;
+const { title, excerpt, seo } = book.data;
+const { Content } = await book.render();
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description ?? excerpt} image={seo?.image} pageType="article" showHeader={false}>
@@ -46,12 +41,11 @@ const { Content } = await post.render();
     (prevPost || nextPost) && (
       <div class="my-16 sm:my-24">
         <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
-        {nextPost && <BookPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-        {prevPost && <BookPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
+        {nextPost && <BookPreview book={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
+        {prevPost && <BookPreview book={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
       </div>
     )
   }
-  <!-- <Subscribe class="my-16 sm:my-24" /> -->
 </BaseLayout>
 
 <script>

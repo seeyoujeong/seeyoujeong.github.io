@@ -12,9 +12,9 @@ const books = (await getCollection('book')).sort(sortItemsByDateDesc);
   <h1 class="mb-12 text-2xl font-serif italic sm:mb-16 sm:text-4xl">Books</h1>
   {
     books?.length > 0 && (
-      <div class="mb-16 sm:mb-24">
-        {books.map((post) => (
-          <BookPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
+      <div class="inline-flex gap-5 mb-16 sm:mb-24">
+        {books.map((book) => (
+          <BookPreview book={book} class="mb-10 sm:mb-12" headingLevel="h3" />
         ))}
       </div>
     )

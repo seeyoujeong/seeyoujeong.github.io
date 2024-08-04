@@ -1,23 +1,19 @@
 ---
 import { type CollectionEntry } from 'astro:content';
-import ArrowRight from '../icons/ArrowRight.astro';
 
-type Props = { post: CollectionEntry<'book'>; class?: string; headingLevel?: 'h2' | 'h3' };
+type Props = { book: CollectionEntry<'book'>; class?: string; headingLevel?: 'h2' | 'h3' };
 
-const { post, class: className, headingLevel = 'h2' } = Astro.props;
-const { title, publishDate, updatedDate, excerpt } = post.data;
+const { book, class: className, headingLevel = 'h2' } = Astro.props;
+const { title } = book.data;
 const TitleTag = headingLevel;
 ---
 
-<a class:list={['flex justify-between items-start gap-8 group', className]} href={`/book/${post.slug}/`}>
+<a class:list={['flex justify-between items-start gap-8 group', className]} href={`/book/${book.slug}/`}>
   <div class="grow">
     <TitleTag
       class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
     >
       {title}
     </TitleTag>
-  </div>
-  <div class="hidden font-serif italic opacity-0 transition group-hover:opacity-100 sm:inline-flex sm:gap-1 sm:items-center sm:shrink-0">
-    View Book List <ArrowRight class="fill-current w-4 h-4" />
   </div>
 </a>
