@@ -3,9 +3,10 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import BookPreview from '../../components/BookPreview.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
 
 export async function getStaticPaths() {
-  const books = await getCollection('book');
+  const books = (await getCollection('book')).sort(sortItemsByDateDesc);
   const postCount = books.length;
   return books.map((book, index) => ({
     params: { slug: book.slug },
@@ -39,10 +40,20 @@ const { Content } = await book.render();
   </article>
   {
     (prevPost || nextPost) && (
-      <div class="my-16 sm:my-24">
-        <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
-        {nextPost && <BookPreview book={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-        {prevPost && <BookPreview book={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
+      <div class:list={['flex my-8 sm:my-12', { 'justify-between': prevPost && nextPost }, { 'justify-end': prevPost && !nextPost }]}>
+        {nextPost && (
+          <div>
+            <h2 class="mb-6 text-xl font-serif italic sm:mb-8 sm:text-2xl">Read Next</h2>{' '}
+            <BookPreview book={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />
+          </div>
+        )}
+
+        {prevPost && (
+          <div>
+            <h2 class="mb-6 text-xl font-serif italic sm:mb-8 sm:text-2xl">Read Previous</h2>
+            <BookPreview book={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />
+          </div>
+        )}
       </div>
     )
   }
