@@ -34,7 +34,6 @@ export type SiteConfig = {
   hero?: Hero;
   subscribe?: Subscribe;
   postsPerPage?: number;
-  projectsPerPage?: number;
 };
 
 const siteConfig: SiteConfig = {
@@ -97,8 +96,7 @@ const siteConfig: SiteConfig = {
       }
     ]
   },
-  postsPerPage: 8,
-  projectsPerPage: 8
+  postsPerPage: 8
 };
 
 export default siteConfig;
