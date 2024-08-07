@@ -83,18 +83,11 @@ const siteConfig: SiteConfig = {
     }
   ],
   hero: {
-    title: 'Hi There & Welcome to My Corner of the Web!',
     text: '*바쁘다 바뻐! 현대 사회!*',
     image: {
       src: '/hero-cats.jpeg',
       alt: 'cats'
-    },
-    actions: [
-      {
-        text: 'Contact',
-        href: '/contact'
-      }
-    ]
+    }
   },
   postsPerPage: 8
 };
