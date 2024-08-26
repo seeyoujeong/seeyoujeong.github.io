@@ -11,13 +11,13 @@ const buttonClasses = 'inline-flex items-center justify-center p-2 text-main bg-
 ---
 
 {
-    href ? (
-        <a href={href} class:list={[buttonClasses, className]} {...rest}>
-            <slot />
-        </a>
-    ) : (
-        <button class:list={[buttonClasses, className]} {...rest}>
-            <slot />
-        </button>
-    )
+  href ? (
+    <a href={href} class:list={[buttonClasses, className]} {...rest}>
+      <slot />
+    </a>
+  ) : (
+    <button class:list={[buttonClasses, className]} {...rest}>
+      <slot />
+    </button>
+  )
 }
