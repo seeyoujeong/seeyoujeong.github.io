@@ -38,8 +38,8 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
   title: 'seeyoujeong',
-  subtitle: '그냥 컴퓨터하는 사람',
-  description: '그냥 컴퓨터하는 사람의 블로그',
+  subtitle: '정리와 기록',
+  description: '정리와 기록',
   image: {
     src: '/about-cat.jpeg',
     alt: 'cat'
@@ -83,7 +83,7 @@ const siteConfig: SiteConfig = {
     }
   ],
   hero: {
-    text: '*바쁘다 바뻐! 현대 사회!*',
+    text: '*바쁘다 바빠! 현대 사회!*',
     image: {
       src: '/hero-cats.jpeg',
       alt: 'cats'
