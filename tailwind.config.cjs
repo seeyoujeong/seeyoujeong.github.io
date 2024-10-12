@@ -54,7 +54,7 @@ module.exports = {
             },
             'h1,h2,h3,h4,h5,h6': {
               fontFamily: theme('fontFamily.serif'),
-              fontWeight: 500
+              fontWeight: 600
             },
             blockquote: {
               fontFamily: theme('fontFamily.serif'),
