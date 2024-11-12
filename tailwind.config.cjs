@@ -62,7 +62,7 @@ module.exports = {
               fontStyle: 'italic',
               fontWeight: 'normal',
               // lineHeight: 1.4,
-              paddingLeft: 0,
+              paddingLeft: '1rem',
               '@media (min-width: theme("screens.sm"))': {
                 // fontSize: '1.66667em',
                 // lineHeight: 1.3
@@ -73,7 +73,7 @@ module.exports = {
         lg: {
           css: {
             blockquote: {
-              paddingLeft: 0
+              paddingLeft: '1rem'
             }
           }
         }
