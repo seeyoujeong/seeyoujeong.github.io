@@ -41,7 +41,7 @@ const siteConfig: SiteConfig = {
   subtitle: '정리와 기록',
   description: '정리와 기록',
   image: {
-    src: '/about-cat.jpeg',
+    src: '/main.png',
     alt: 'cat'
   },
   headerNavLinks: [

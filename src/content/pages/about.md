@@ -4,13 +4,11 @@ seo:
   title: About Me
   description: 소개하는 글입니다.
   image:
-    src: '/about.jpeg'
+    src: '/main.png'
     alt: cat
 ---
 
 안녕하세요. 정찬욱입니다.
-
-<img src="/about-cat.jpeg" class="w-[200px]" alt="cat" />
 
 #### 개발자
 
