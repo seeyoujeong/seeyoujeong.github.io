@@ -63,6 +63,7 @@ module.exports = {
               fontWeight: 'normal',
               // lineHeight: 1.4,
               paddingLeft: '1rem',
+              quotes: 'none',
               '@media (min-width: theme("screens.sm"))': {
                 // fontSize: '1.66667em',
                 // lineHeight: 1.3
