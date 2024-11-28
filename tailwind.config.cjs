@@ -56,6 +56,9 @@ module.exports = {
               fontFamily: theme('fontFamily.serif'),
               fontWeight: 600
             },
+            'ul, ol, li': {
+              marginTop: '0.5rem'
+            },
             blockquote: {
               fontFamily: theme('fontFamily.serif'),
               // fontSize: '1.3125em',
@@ -75,6 +78,9 @@ module.exports = {
           css: {
             blockquote: {
               paddingLeft: '1rem'
+            },
+            'ul, ol, li': {
+              marginTop: '0.5rem'
             }
           }
         }
