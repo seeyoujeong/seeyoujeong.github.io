@@ -8,7 +8,7 @@ import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
 const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-const latestPosts = posts.slice(0, 3);
+const latestPosts = posts.slice(0, 6);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
