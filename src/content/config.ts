@@ -1,4 +1,5 @@
 import { defineCollection, z } from 'astro:content';
+import { slug } from 'github-slugger';
 
 const seoSchema = z.object({
   title: z.string().min(5).max(120).optional(),
@@ -13,15 +14,20 @@ const seoSchema = z.object({
 });
 
 const blog = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    excerpt: z.string().optional(),
-    publishDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    isFeatured: z.boolean().default(false),
-    tags: z.array(z.string()).default([]),
-    seo: seoSchema.optional()
-  })
+  schema: z
+    .object({
+      title: z.string(),
+      excerpt: z.string().optional(),
+      publishDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      isFeatured: z.boolean().default(false),
+      tags: z.array(z.string()).default([]),
+      seo: seoSchema.optional()
+    })
+    .transform(({ tags, ...data }) => ({
+      ...data,
+      tags: tags.map((tag) => slug(tag))
+    }))
 });
 
 const pages = defineCollection({

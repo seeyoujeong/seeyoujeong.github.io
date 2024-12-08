@@ -27,9 +27,8 @@ const blog = page.data;
 const params = Astro.params;
 const allPosts = await getCollection('blog');
 const allTags = getAllTags(allPosts);
-const decodedSlag = decodeURIComponent(params.slug);
 const currentTag = allTags.find((tag) => {
-  return tag.slug === decodedSlag;
+  return tag.slug === params.slug;
 });
 ---
 
