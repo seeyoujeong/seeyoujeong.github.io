@@ -71,6 +71,21 @@ module.exports = {
                 // fontSize: '1.66667em',
                 // lineHeight: 1.3
               }
+            },
+            'code:not(pre > code)': {
+              backgroundColor: 'rgba(135, 131, 120, 0.15)',
+              color: '#eb5757',
+              padding: '0.2em 0.4em',
+              borderRadius: '5px',
+              fontSize: '85%',
+              fontWeight: 400,
+              verticalAlign: '0.05rem',
+              '&::before': {
+                content: 'none'
+              },
+              '&::after': {
+                content: 'none'
+              }
             }
           }
         },
