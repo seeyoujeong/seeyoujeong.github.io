@@ -1,7 +1,7 @@
 ---
 title: About
 seo:
-  title: About Me
+  title: About
   description: 소개하는 글입니다.
   image:
     src: '/main.png'
@@ -18,6 +18,6 @@ seo:
 
 [깃허브](https://github.com/seeyoujeong)에 잔디를 꾸준히 심는 중입니다.
 
-#### 1달에 1권 읽기
+#### 독서
 
-어쩌다 보니 독서가 취미입니다.
+독서가 취미입니다.

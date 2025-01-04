@@ -76,10 +76,6 @@ const siteConfig: SiteConfig = {
     {
       text: 'GitHub',
       href: 'https://github.com/seeyoujeong'
-    },
-    {
-      text: 'Instagram',
-      href: 'https://www.instagram.com/seeyoujeong/'
     }
   ],
   hero: {
