@@ -10,7 +10,7 @@ const hero = siteConfig.hero;
     <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
       {hero.image?.src && (
         <figure>
-          <img class="w-3/5" src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} />
+          <img class="w-1/2" src={hero.image.src} loading="lazy" decoding="async" alt={hero.image.alt || ''} />
           {hero.image.caption && <figcaption class="mt-1.5 text-xs sm:text-sm">{hero.image.caption}</figcaption>}
         </figure>
       )}

@@ -79,7 +79,6 @@ const siteConfig: SiteConfig = {
     }
   ],
   hero: {
-    text: '*바쁘다 바빠! 현대 사회!*',
     image: {
       src: '/hero-cats.jpeg',
       alt: 'cats'
