@@ -38,11 +38,10 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
   title: 'seeyoujeong',
-  subtitle: '정리와 기록',
   description: '정리와 기록',
   image: {
     src: '/main.png',
-    alt: 'cat'
+    alt: 'j'
   },
   headerNavLinks: [
     {
@@ -78,12 +77,6 @@ const siteConfig: SiteConfig = {
       href: 'https://github.com/seeyoujeong'
     }
   ],
-  hero: {
-    image: {
-      src: '/hero-cats.jpeg',
-      alt: 'cats'
-    }
-  },
   postsPerPage: 8
 };
 
